@@ -18,6 +18,10 @@ Invoke with `$toonforge-ai-studio`, for example:
 
 > Use $toonforge-ai-studio to plan a 45-second original 2D cartoon short with two characters, then create the character packets and shot ledger.
 
+## Validation
+
+Run `node scripts/validate-skill.mjs` to check required package files, entrypoint frontmatter, and internal reference links. The same check runs on pushes and pull requests through GitHub Actions.
+
 ## Design boundary
 
 ToonForge is designed for original characters and descriptive visual directions. It does not direct recreation of protected characters or imitation of living artists.
