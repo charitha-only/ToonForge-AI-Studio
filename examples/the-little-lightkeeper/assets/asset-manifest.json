@@ -1,0 +1,13 @@
+{
+  "projectId": "PROJ-LIGHTKEEPER-01",
+  "statusVocabulary": ["NOT GENERATED", "PENDING REVIEW", "PASS", "FAIL", "NEEDS REVISION"],
+  "assets": [
+    {"assetId":"REF-ELIO-CANON-01","version":"v001","tool":"Codex built-in image generation","method":"text-to-image","file":"assets/images/rejected/REF-ELIO-CANON-01_v001_rejected.png","status":"NEEDS REVISION","defects":["Visible eyebrows violate Elio identity lock."],"references":[]},
+    {"assetId":"REF-ELIO-CANON-01","version":"v002","tool":"Codex built-in image generation","method":"text-to-image","file":"assets/images/canonical/REF-ELIO-CANON-01_v002_approved.png","status":"PASS","defects":[],"references":[]},
+    {"assetId":"REF-GLIM-CANON-01","version":"v001","tool":"Codex built-in image generation","method":"text-to-image","file":"assets/images/canonical/REF-GLIM-CANON-01_v001_approved.png","status":"PASS","defects":[],"references":[]},
+    {"assetId":"REF-MOONMOSS-01","version":"v001","tool":"Codex built-in image generation","method":"text-to-image","file":"assets/images/environments/REF-MOONMOSS-01_v001_approved.png","status":"PASS","defects":[],"references":[]},
+    {"assetId":"REF-ELIO-EXP-01","version":"v001","tool":"Codex built-in image generation","method":"reference-guided image generation","file":"assets/images/expressions/REF-ELIO-EXP-01_v001_approved.png","status":"PASS","defects":[],"references":["REF-ELIO-CANON-01_v002"]},
+    {"assetId":"SB-020-020","version":"v001","tool":"Codex built-in image generation","method":"reference-guided image generation","file":"assets/images/storyboard/SB-020-020_v001_approved.png","status":"PASS","defects":[],"references":["REF-ELIO-CANON-01_v002","REF-GLIM-CANON-01_v001","REF-MOONMOSS-01_v001"]},
+    {"assetId":"VID-SH-010-010","version":"v001","tool":"Google Veo 3.1","method":"human-operated generation pending verified access","file":null,"status":"NOT GENERATED","defects":[],"references":["REF-ELIO-CANON-01_v002","REF-MOONMOSS-01_v001"]}
+  ]
+}

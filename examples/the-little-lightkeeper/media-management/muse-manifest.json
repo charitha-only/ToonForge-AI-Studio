@@ -1,0 +1,8 @@
+{
+  "provider": "muse.ai",
+  "automationStatus": "MANUAL_ONLY_UNTIL_SERVICE_URL_ACCESS_AND_API_ARE_VERIFIED",
+  "uploads": [
+    {"assetId":"SB-020-020_v001","filename":"SB-020-020_v001_approved.png","localPath":"assets/images/storyboard/SB-020-020_v001_approved.png","uploadStatus":"PENDING_USER_AUTHORIZED_UPLOAD","mediaId":null,"playbackUrl":null,"error":null}
+  ],
+  "reviewChecklist": ["Confirm filename and project/scene/shot grouping.","Record user-confirmed media ID and playback URL after manual upload.","Do not mark uploaded without user confirmation.","Capture non-secret upload errors and retry only with authorization."]
+}

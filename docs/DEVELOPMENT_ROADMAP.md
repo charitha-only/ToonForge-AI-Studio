@@ -14,11 +14,23 @@ This iteration closes the production-planning gaps: reusable templates, formal s
 4. Reusable character and shot-ledger templates.
 5. Changelog and validator coverage for new modules.
 
+## v1.3.0 delivered
+
+1. A complete, internally consistent, planned-only 45-second production example.
+2. End-to-end story, character, reference, prompt, audio, editorial, and QC records.
+3. Deterministic checks for example existence, exact planned runtime, and recurring ID integrity.
+
+## v1.4.0 delivered locally
+
+1. Real, inspected image-reference assets with versioned approval/rejection evidence.
+2. Provider research and a human-operated video/media-management boundary for unverified accounts.
+3. Asset-manifest, provider-adapter, and error-path validation.
+
 ## Next milestones
 
 ### M1 — Production package ergonomics
 
-Add a clearly bounded example production packet that demonstrates IDs and handoff records without presenting fictional media as generated. Keep it optional so it does not burden simple requests.
+Collect feedback from use of the included example and add only narrowly justified record fields. Keep the example optional so it does not burden simple requests.
 
 ### M2 — Validation depth
 

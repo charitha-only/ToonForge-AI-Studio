@@ -26,6 +26,11 @@ Run `node scripts/validate-skill.mjs` to check required package files, entrypoin
 ## Development
 
 See [the development roadmap](docs/DEVELOPMENT_ROADMAP.md) for completed and planned capability work, and [the changelog](CHANGELOG.md) for version history.
+For a tool-agnostic continuation checkpoint, see [the development handoff](docs/HANDOFF.md).
+
+## Complete example
+
+[The Little Lightkeeper](examples/the-little-lightkeeper/README.md) is a 45-second original 3D cartoon production package. It includes traceable real image-reference tests alongside planned-only video/audio/editorial records; see its asset manifest and QC report for current evidence and limitations.
 
 ## Design boundary
 

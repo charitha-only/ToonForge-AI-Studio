@@ -1,0 +1,10 @@
+{
+  "projectId": "PROJ-LIGHTKEEPER-01",
+  "title": "The Little Lightkeeper",
+  "targetRuntimeSeconds": 45,
+  "mediaStatus": "PARTIALLY_GENERATED",
+  "generatedImageCount": 6,
+  "generatedVideoCount": 0,
+  "assetManifest": "assets/asset-manifest.json",
+  "mediaManagementManifest": "media-management/muse-manifest.json"
+}
