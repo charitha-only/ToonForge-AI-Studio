@@ -1,0 +1,4 @@
+interface:
+  display_name: "ToonForge AI Studio"
+  short_description: "Plan original cartoon character videos with continuity control"
+  default_prompt: "Use $toonforge-ai-studio to plan an original cartoon video with character and scene continuity records."

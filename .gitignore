@@ -1,0 +1,11 @@
+# Generated renders and work files
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.psd
+*.blend
+*.tmp
+
+# Keep project-specific large media outside this reusable skill package.
