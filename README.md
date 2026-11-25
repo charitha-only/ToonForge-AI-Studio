@@ -9,6 +9,7 @@ An Agent Skill for planning and producing original cartoon-character videos with
 - provider-neutral prompt templates and capability-safe adaptation;
 - multi-character blocking, interaction beats, and a shot-state ledger;
 - episode/series bible, production layout, asset manifest, and quality gates.
+- story, storyboard, audio-post, and cinematic-editing modules with reusable records.
 
 ## Install
 
@@ -21,6 +22,10 @@ Invoke with `$toonforge-ai-studio`, for example:
 ## Validation
 
 Run `node scripts/validate-skill.mjs` to check required package files, entrypoint frontmatter, and internal reference links. The same check runs on pushes and pull requests through GitHub Actions.
+
+## Development
+
+See [the development roadmap](docs/DEVELOPMENT_ROADMAP.md) for completed and planned capability work, and [the changelog](CHANGELOG.md) for version history.
 
 ## Design boundary
 

@@ -22,6 +22,9 @@ Create a production root using the layout in [production-layout.md](references/p
 | One still, clip, or concept | concise brief, prompt, negative/avoid list, acceptance checks | [prompting.md](references/prompting.md) |
 | Character creation or redesign | character packet and reference plan | [character-consistency.md](references/character-consistency.md) |
 | Scene with two or more characters | staging sheet, interaction beats, shot prompts | [scene-continuity.md](references/scene-continuity.md) |
+| Story, script, or storyboard | story premise, beat sheet, script, and storyboard plan | [story-development.md](references/story-development.md) |
+| Dialogue, voices, music, or SFX | audio brief, cue sheet, and mix handoff | [audio-post.md](references/audio-post.md) |
+| Edit, transition, or final sequence | editorial map, transition intent, and picture-lock checks | [cinematic-editing.md](references/cinematic-editing.md) |
 | Episode, short, or series | bible, beat sheet, shot ledger, QC plan | [episode-series.md](references/episode-series.md) |
 | Provider/tool selected | capability-safe adaptation table and ready-to-paste prompts | [tool-adaptation.md](references/tool-adaptation.md) |
 
@@ -32,7 +35,8 @@ Create a production root using the layout in [production-layout.md](references/p
 3. **Plan shots as state transitions.** A shot begins from the prior approved state and ends in an explicitly recorded state. Keep one main action, camera intention, and emotional beat per short generation unit.
 4. **Generate in controllable pieces.** Prefer short, reviewable shots. For changes, preserve locked facts and vary one layer at a time (performance, camera, lighting, or background) so regressions are attributable.
 5. **Review before advancing.** Run the applicable visual, continuity, and export checks in [quality-control.md](references/quality-control.md). Mark assets approved, revise, or rejected; propagate only approved state.
-6. **Package handoff.** Deliver prompts plus a manifest that names references, shot order, dialogue/SFX/music intent, and open risks. State which outputs are plans versus generated/verified media.
+6. **Edit and finish deliberately.** Build the edit from approved shots, lock picture before final audio decisions, and keep dialogue, music, and effects as distinct cue tracks until the target environment confirms a mix workflow.
+7. **Package handoff.** Deliver prompts plus a manifest that names references, shot order, dialogue/SFX/music intent, and open risks. State which outputs are plans versus generated/verified media.
 
 ## Working principles
 
@@ -53,6 +57,10 @@ For a small request, return: creative assumptions, prompt(s), exclusions, refere
 - Use [scene-continuity.md](references/scene-continuity.md) for blocking, interaction, and scene-state procedures.
 - Use [prompting.md](references/prompting.md) for style modules and tool-agnostic prompt templates.
 - Use [episode-series.md](references/episode-series.md) for episode and series planning.
+- Use [story-development.md](references/story-development.md) for premise-to-storyboard workflow.
+- Use [audio-post.md](references/audio-post.md) for voice direction, dialogue, music, and effects.
+- Use [cinematic-editing.md](references/cinematic-editing.md) for editorial continuity and finishing.
 - Use [tool-adaptation.md](references/tool-adaptation.md) when adapting to an actual image/video/audio tool.
 - Use [quality-control.md](references/quality-control.md) for acceptance gates.
 - Copy and complete records from [production-templates.md](references/production-templates.md).
+- Start from the reusable files in [templates/](templates/) when the user needs production artifacts.

@@ -1,5 +1,5 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
-import { dirname, join, relative, resolve } from "node:path";
+import { dirname, extname, join, resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const required = [
@@ -13,6 +13,16 @@ const required = [
   "references/quality-control.md",
   "references/production-layout.md",
   "references/production-templates.md",
+  "references/story-development.md",
+  "references/audio-post.md",
+  "references/cinematic-editing.md",
+  "templates/character-packet.md",
+  "templates/story-beat-sheet.md",
+  "templates/storyboard-sheet.md",
+  "templates/audio-cue-sheet.md",
+  "templates/scene-shot-ledger.md",
+  "CHANGELOG.md",
+  "docs/DEVELOPMENT_ROADMAP.md",
 ];
 
 const errors = [];
@@ -27,11 +37,6 @@ if (existsSync(skillPath)) {
     errors.push("SKILL.md must begin with ToonForge Agent Skills frontmatter.");
   }
 
-  const links = [...skill.matchAll(/\]\((references\/[^)]+)\)/g)].map((match) => match[1]);
-  for (const link of links) {
-    const target = resolve(dirname(skillPath), link);
-    if (!target.startsWith(root) || !existsSync(target)) errors.push(`Broken reference link: ${link}`);
-  }
 }
 
 const yamlPath = join(root, "agents/openai.yaml");
@@ -42,11 +47,26 @@ if (existsSync(yamlPath)) {
   }
 }
 
-function countFiles(directory) {
-  return readdirSync(directory).reduce((total, entry) => {
+function filesUnder(directory) {
+  return readdirSync(directory).flatMap((entry) => {
+    if (entry === ".git") return [];
     const fullPath = join(directory, entry);
-    return total + (statSync(fullPath).isDirectory() ? countFiles(fullPath) : 1);
-  }, 0);
+    return statSync(fullPath).isDirectory() ? filesUnder(fullPath) : [fullPath];
+  });
+}
+
+const files = filesUnder(root);
+for (const markdownPath of files.filter((path) => extname(path) === ".md")) {
+  const markdown = readFileSync(markdownPath, "utf8");
+  const links = [...markdown.matchAll(/\]\(([^)]+)\)/g)].map((match) => match[1]);
+  for (const link of links) {
+    if (/^(?:https?:|mailto:|#)/.test(link)) continue;
+    const cleanLink = link.split("#", 1)[0];
+    const target = resolve(dirname(markdownPath), cleanLink);
+    if (!target.startsWith(root) || !existsSync(target)) {
+      errors.push(`Broken local link in ${markdownPath.replace(root + "/", "")}: ${link}`);
+    }
+  }
 }
 
 if (errors.length) {
@@ -54,4 +74,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`ToonForge skill validation passed (${countFiles(root)} files checked).`);
+console.log(`ToonForge skill validation passed (${files.length} files checked).`);

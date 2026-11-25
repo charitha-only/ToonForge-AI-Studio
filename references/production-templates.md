@@ -32,6 +32,8 @@ Change log:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SH-010-010 |  |  |  |  |  |  |  |  |
 
+For ready-to-copy production files, use `templates/story-beat-sheet.md`, `templates/storyboard-sheet.md`, `templates/audio-cue-sheet.md`, `templates/character-packet.md`, and `templates/scene-shot-ledger.md`.
+
 ## Asset manifest
 
 | Asset ID | File / provider asset ID | Source / prompt version | Reference inputs | Rights/provenance note | Status |

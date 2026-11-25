@@ -15,4 +15,6 @@ ToonForge-Project/
 └── 07_archive/               # superseded assets; never silently overwrite approvals
 ```
 
+Within `editorial/`, keep the edit decision list, picture-lock record, transition notes, caption/subtitle source, and final QC report. Keep raw audio, editorial proxies, and final masters distinctly named; do not treat a planning document as an exported media file.
+
 Use IDs such as `SER-01`, `EP-01`, `SC-010`, `SH-010-030`, `CHR-LUMA-01`, `LOC-ROOFTOP-01`, and `PROP-MAP-01`. Recommended filenames: `[ID]_[purpose]_[v###]_[status].[ext]`, e.g. `SH-010-030_render_v004_approved.mp4`.
